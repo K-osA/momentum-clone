@@ -4,24 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <title>Momentum App</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your Name?"
-      />
-      <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00:00</h2>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
+    <main class="main-contents">
+      <h2 id="clock" class="main-contents--white-font">00:00:00</h2>
+      <h1 id="greeting" class="hidden main-contents--white-font"></h1>
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your Name?"
+        />
+      </form>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <div id="todo-lists">
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
     <div id="quote">
       <span></span>
       <span></span>

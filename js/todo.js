@@ -27,7 +27,7 @@ function paintToDo(newToDo) {
   li.appendChild(span);
   li.appendChild(button);
   toDoList.appendChild(li);
-  saveToDos();
+  toDoList.scrollTop = toDoList.scrollHeight;
 }
 
 function handleToDoSubmit(event) {

@@ -36,6 +36,7 @@
 #todo-form {
   width: 550px;
   height: 50px;
+  margin-bottom: 10px;
 }
 #todo-form input {
   font-size: 30px;
@@ -51,7 +52,7 @@
   text-align: center;
 }
 #todo-list {
-  height: 230px;
+  height: 200px;
   overflow: auto;
 }
 #todo-list::-webkit-scrollbar {

@@ -9,8 +9,8 @@
   </head>
   <body>
     <main class="main-contents">
-      <h2 id="clock" class="main-contents--white-font">00:00:00</h2>
-      <h1 id="greeting" class="hidden main-contents--white-font"></h1>
+      <h2 id="clock">00:00:00</h2>
+      <h1 id="greeting"></h1>
       <form id="login-form" class="hidden">
         <input
           required
@@ -19,15 +19,18 @@
           placeholder="What is your Name?"
         />
       </form>
-      <form id="todo-form">
-        <input
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-          required
-        />
-      </form>
-      <div id="todo-lists">
-        <ul id="todo-list"></ul>
+      <div class="todo-main hidden">
+        <form id="todo-form">
+          <input
+            type="text"
+            maxlength="50"
+            placeholder="Write a To Do and Enter"
+            required
+          />
+        </form>
+        <div id="todo-lists">
+          <ul id="todo-list"></ul>
+        </div>
       </div>
     </main>
     <div id="quote">

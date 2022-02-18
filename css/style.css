@@ -1,114 +1,133 @@
 .hidden {
-  display: none !important;
+    display: none !important;
 }
 #clock {
-  font-size: 150px;
-  font-weight: 500;
-  margin-bottom: 15px;
+    font-size: 150px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 #greeting {
-  font-size: 70px;
-  font-weight: 500;
-  margin-bottom: 30px;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 #login-form {
-  width: 700px;
-  height: 70px;
+    width: 700px;
+    height: 70px;
 }
 #login-form input {
-  font-size: 50px;
-  width: inherit;
-  background: none;
-  border: none;
-  outline: none;
-  border-bottom: 3px solid white;
-  color: white;
-  text-align: center;
+    font-size: 50px;
+    width: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid white;
+    color: white;
+    text-align: center;
 }
 #login-form input::placeholder {
-  color: white;
+    color: white;
 }
 .todo-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #todo-form {
-  width: 550px;
-  height: 50px;
-  margin-bottom: 10px;
+    width: 550px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 #todo-form input {
-  font-size: 30px;
-  width: inherit;
-  background: none;
-  border: none;
-  outline: none;
-  border-bottom: 3px solid white;
-  color: white;
+    font-size: 30px;
+    width: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid white;
+    color: white;
 }
 #todo-form input::placeholder {
-  color: white;
-  text-align: center;
+    color: white;
+    text-align: center;
+}
+#todo-lists {
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    border-radius: 20px;
 }
 #todo-list {
-  height: 200px;
-  overflow: auto;
+    height: 200px;
+    overflow: auto;
 }
 #todo-list::-webkit-scrollbar {
-  display: none;
+    width: 5px;
+}
+#todo-list::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+#todo-list::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: gray;
+}
+#todo-list::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
 }
 #todo-list li {
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
 }
 #todo-list li span,
 #todo-list li button {
-  font-size: 25px;
+    font-size: 25px;
 }
 #todo-list li button {
-  font-size: 18px;
-  background: none;
-  border: none;
-  cursor: pointer;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 #bgImage {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -10;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
 }
 #quote {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #quote span {
-  text-align: center;
+    text-align: center;
 }
 #quote span:last-child {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 #weather {
-  display: flex;
-  position: absolute;
-  top: 5px;
-  right: 5px;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 #weather span:first-child {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 .main-contents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
 }
